@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  header
+  form
+    #chatPreference
+      input#whatsapp(type='radio', name='chatClient', value='WhatsApp', checked='')
+      label(for='whatsapp') WhatsApp
+      input#bbm(type='radio', name='chatClient', value='BBM')
+      label(for='bbm') BBM
+      input#fbchat(type='radio', name='chatClient', value='FBChat')
+      label(for='fbchat') FBChat
+    #userPin
+      p Number&colon;
+      input.resizedBox(type='tel', name='usrTel', placeholder='#')
+    #submit
+      span
+  #thankyou
+    #thankyouMessage
+      p Thanks&excl; 
+      p You&apos;ll receive confirmation 
+      p via WhatsApp shortly
+      #goBack
+  footer
+    | ByeByeHi&period;com &copy; 2014
