@@ -10,8 +10,7 @@ var path = require('path');
 
 //Database
 var mongo = require('mongoskin');
-var db = mongo.db("mongodb://localhost:27017/byebyehi", {native_parser:true});
-
+var db = mongo.db("mongodb://bbhadmin:ahorsewithnoname1@ds033459.mongolab.com:33459/bbh_db", {native_parser:true});
 
 var app = express();
 
