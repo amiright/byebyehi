@@ -48,6 +48,7 @@ function addUser(event){
 				$('#thankyou').toggle();
 			}
 			else {
+				//show error storing the user in the db
 				alert('Error: ' + response.msg);
 			}
 		});
@@ -58,11 +59,9 @@ function addUser(event){
 	}
 };
 
-
 //HomeScreen
 function homeScreen(event){
 	event.preventDefault();
-		
 		$('#thankyou').toggle();
 		$('#chatPreference').toggle();
 		$('#userPin').toggle();
